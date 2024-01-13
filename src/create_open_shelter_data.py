@@ -139,6 +139,8 @@ def main():
         # 保存
         export_df.to_csv(f'./data/latest/open_shelter_Nanao-shi_{update_datetime}.csv', index=False)
         export_gdf.to_file('./data/latest/open_shelter_Nanao-shi.geojson')
+        export_gdf.to_file('./data/latest/open_shelter_Nanao-shi.fgb', index=False, driver="FlatGeobuf", spatial_index="NO")
+
         print(f'{update_datetime}時点のデータに更新しました。')
 
     # 更新がない場合
