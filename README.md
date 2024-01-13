@@ -5,10 +5,10 @@
 データ作成処理の定期実行（1時間毎）により、七尾市のWebサイト更新があった際に最新情報に更新される見込みです。  
 
 以下のリンクより、最新のデータにアクセス可能です。  
-- GeoJSON形式
+- GeoJSON形式  
 [https://raokiey.github.io/R06-Noto-Peninsula-EQ-open-shelter-Nanao/data/latest/open_shelter_Nanao-shi.geojson](https://raokiey.github.io/R06-Noto-Peninsula-EQ-open-shelter-Nanao/data/latest/open_shelter_Nanao-shi.geojson)  
 
-- FlatGeobuf形式
+- FlatGeobuf形式  
 [https://raokiey.github.io/R06-Noto-Peninsula-EQ-open-shelter-Nanao/data/latest/open_shelter_Nanao-shi.fgb](https://raokiey.github.io/R06-Noto-Peninsula-EQ-open-shelter-Nanao/data/latest/open_shelter_Nanao-shi.fgb)  
 
 
@@ -22,7 +22,7 @@
     見つけた場合には、[Xのアカウント](https://twitter.com/ra0kley/)などで教えていただけますと幸いです。
 
 ## ライセンスについて  
-- 公開しているGeoJSON形式およびCSV形式のデータ: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- 公開しているGeoJSON形式およびFlatGeobuf形式、CSV形式のデータ: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 - ソースコード: [MIT](https://opensource.org/license/mit/)
 
 ## 出典
