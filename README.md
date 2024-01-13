@@ -4,11 +4,11 @@
 このリポジトリでは、令和6年能登半島地震に関連して石川県七尾市のWebサイトにて公開されている[開設中の避難所情報](https://www.city.nanao.lg.jp/bosai/mail/202401021200.html)を石川県および七尾市が公開しているオープンデータをもとに位置情報などを付加して、GISデータ化したデータを公開しています。  
 データ作成処理の定期実行（1時間毎）により、七尾市のWebサイト更新があった際に最新情報に更新される見込みです。  
 
-以下のリンクより、最新のGeoJSON形式のデータがダウンロード可能です。
+以下のリンクより、最新のGeoJSON形式のデータがダウンロード可能です。  
 [https://raokiey.github.io/R06-Noto-Peninsula-EQ-open-shelter-Nanao/data/latest/open_shelter_Nanao-shi.geojson](https://raokiey.github.io/R06-Noto-Peninsula-EQ-open-shelter-Nanao/data/latest/open_shelter_Nanao-shi.geojson)  
 
-また、[`./data/latest/`](./data/latest/) にCSV形式のデータも公開しています。 
-過去のデータを利用したい方は、[`./data/history/`](./data/history/) にCSV形式のデータのみですが、保存しています。  
+また、[`./data/latest/`](https://raokiey.github.io/R06-Noto-Peninsula-EQ-open-shelter-Nanao/data/latest/) にCSV形式のデータも公開しています。 
+過去のデータを利用したい方は、[`./data/history/`]( https://raokiey.github.io/R06-Noto-Peninsula-EQ-open-shelter-Nanao/data/history/) にCSV形式のデータのみですが、保存しています。  
 ※ 公開当初は、2024年1月9日18時時点のデータのみを格納しています。  
 
 ## 注意事項
