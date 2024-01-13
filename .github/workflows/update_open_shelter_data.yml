@@ -22,6 +22,7 @@ jobs:
       # 変更があるか確認
       - name: check for changes
         id: git_status
+        continue-on-error: true
         run: |
           git diff --quiet
           echo ::set-output name=changes::${{ !(steps.git_status.outputs.exit_code == 0) }}
