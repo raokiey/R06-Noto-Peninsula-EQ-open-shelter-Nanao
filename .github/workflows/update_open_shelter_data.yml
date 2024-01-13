@@ -20,18 +20,15 @@ jobs:
         run: |
           python src/create_open_shelter_data.py
       # 変更があるか確認
-      - name: check for changes
+      - name: check for changes and ommit open shelter data
         id: git_status
-        continue-on-error: true
         run: |
-          git diff --quiet
-          echo ::set-output name=changes::${{ !(steps.git_status.outputs.exit_code == 0) }}
-      # 変更がある場合はmainブランチにプッシュ
-      - name: commit open shelter data
-        if: steps.git_status.outputs.changes == 'true'
-        run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-          git add data/
-          git commit -m 'update open shelter data'
-          git push origin main
+          git add -N .
+          if ! git diff --exit-code --quiet
+          then
+            git config --global user.name "${{ github.actor }}"
+            git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+            git add data/
+            git commit -m 'update open shelter data'
+            git push origin main
+          fi
