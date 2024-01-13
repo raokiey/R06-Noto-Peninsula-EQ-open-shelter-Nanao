@@ -78,14 +78,14 @@ def merge_reference_data(matching_df: pd.DataFrame, update_datetime_ja: str) -> 
     # Webサイト上の開設中の避難所情報と参照用データの情報をマージし、整理
     merged_df = pd.merge(match_df, reference_df, left_on='マッチング用名称', right_on='名称', how='left', suffixes=('', '_ref'))
     merged_df = merged_df.sort_values(by='source_order').reset_index(drop=True)
+    merged_df['時点'] = f'{update_datetime_ja}'
 
     export_df = merged_df[[
-        'ID', '地区', '名称', '人数', '名称_カナ', '名称_英字', '町字ID', '所在地_連結表記', '所在地_都道府県',
+        'ID', '地区', '名称', '人数', '時点', '町字ID', '所在地_連結表記', '所在地_都道府県',
         '所在地_市区町村', '所在地_町字', '所在地_番地以下', '建物名等(方書)', '緯度', '経度', '標高', '電話番号',
         '災害種別_洪水', '災害種別_崖崩れ、土石流及び地滑り', '災害種別_高潮', '災害種別_地震', '災害種別_津波',
         '災害種別_大規模な火事', '災害種別_内水氾濫', '災害種別_火山現象', '想定収容人数', '対象となる町会・自治会'
        ]]
-    export_df = export_df.rename(columns={'人数': f'人数_{update_datetime_ja}時点'})
 
     return export_df
 
