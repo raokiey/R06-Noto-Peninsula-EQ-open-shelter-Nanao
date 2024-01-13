@@ -7,8 +7,8 @@
 以下のリンクより、最新のGeoJSON形式のデータがダウンロード可能です。  
 [https://raokiey.github.io/R06-Noto-Peninsula-EQ-open-shelter-Nanao/data/latest/open_shelter_Nanao-shi.geojson](https://raokiey.github.io/R06-Noto-Peninsula-EQ-open-shelter-Nanao/data/latest/open_shelter_Nanao-shi.geojson)  
 
-また、[`./data/latest/`](https://raokiey.github.io/R06-Noto-Peninsula-EQ-open-shelter-Nanao/data/latest/) にCSV形式のデータも公開しています。 
-過去のデータを利用したい方は、[`./data/history/`]( https://raokiey.github.io/R06-Noto-Peninsula-EQ-open-shelter-Nanao/data/history/) にCSV形式のデータのみですが、保存しています。  
+また、[`./data/latest/`](https://github.com/raokiey/R06-Noto-Peninsula-EQ-open-shelter-Nanao/tree/main/data/latest/) にCSV形式のデータも公開しています。 
+過去のデータを利用したい方は、[`./data/history/`](https://github.com/raokiey/R06-Noto-Peninsula-EQ-open-shelter-Nanao/tree/main/data/history/) にCSV形式のデータのみですが、保存しています。  
 ※ 公開当初は、2024年1月9日18時時点のデータのみを格納しています。  
 
 ## 注意事項
