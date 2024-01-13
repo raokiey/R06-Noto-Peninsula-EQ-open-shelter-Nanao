@@ -1,7 +1,7 @@
 name: update open shelter data
 on:
   schedule:
-    - cron: "* */1 * * *" # 1時間毎に実行
+    - cron: "0 * * * *" # 1時間毎に実行
   workflow_dispatch:
 jobs:
   update:
