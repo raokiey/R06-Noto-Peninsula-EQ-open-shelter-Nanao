@@ -40,8 +40,11 @@ def get_update_datetime(url: str) -> Tuple[str, str]:
             hour += 12
         datetime_part = datetime_part.split('日')[0] + '日' + str(hour) + '時'
     # 午前の場合は'午前'を取り除く
-    else:
+    elif '午前' in datetime_part:
         datetime_part = datetime_part.replace('午前', '')
+    # 正午の場合は12時にする
+    elif '正午' in datetime_part:
+        datetime_part = datetime_part.replace('正午', '12時')
     datetime_str = f'2024年{datetime_part}'
     # YYYYmmddHHMM形式にフォーマット
     update_datetime = datetime.strptime(datetime_str, '%Y年%m月%d日%H時').strftime('%Y-%m-%d-%H%M')
