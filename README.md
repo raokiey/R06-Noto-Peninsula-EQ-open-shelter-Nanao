@@ -22,6 +22,8 @@
         + 人数_令和6年MM月YY日時点 → 人数  
         + 上の変更に伴い、「時点」を新しく列に付け加えました。  
     - 「名称_カナ」、「名称_英字」が七尾市のWebサイトにて公開されている開設中の避難所名称と対応関係がないため、削除しました。  
+- 2024/06/23 16:15  
+    - 七尾市のサイトに記載されている福祉避難所が指定緊急避難所のオープンデータに記載がなく反映されていなかったため、手動で追加しました。  
 
 ## 注意事項
 - 避難所によっては集計時間が異なることがあります。（七尾市Webサイトより）  
@@ -37,3 +39,4 @@
 - 七尾市「[避難所一覧/開設中の避難所状況](https://www.city.nanao.lg.jp/bosai/mail/202401021200.html)」  
 -  石川県「[指定緊急避難所一覧](https://www.pref.ishikawa.lg.jp/opendata/shakaikiban_index.html)」、[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 
 - 七尾市「[10_指定緊急避難所施設一覧](https://www.city.nanao.lg.jp/koho/shise/koho/opendata/index.html)」、[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 
+- 七尾市「[指定福祉避難所](https://www.city.nanao.lg.jp/bosai/kurashi/bosai/hinan/documents/r040701_fukushihinanjo.pdf)」  
